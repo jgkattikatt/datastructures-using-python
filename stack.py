@@ -78,6 +78,7 @@ if __name__ == '__main__':
     stack_obj.push(2)
     print stack_obj
     print stack_obj.pop()
+    print stack_obj.peek()
     print stack_obj.is_empty()
     print stack_obj.size()
     print stack_obj
