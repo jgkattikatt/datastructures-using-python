@@ -39,6 +39,17 @@ class Stack:
         else:
             raise StackException('Pop operation not supported on an empty stack')
 
+    def peek(self):
+        """peek() - returns last inserted item without removing it from the stack
+           args : None
+           return : item
+           on failure : StackException()
+        """
+        if not self.is_empty():
+            return self._stack_items[-1]
+        else:
+            raise StackException('Peek operation not supported on an empty stack')
+
     def is_empty(self):
         """is_empty() - returns True if stack is empty, else False
            args : None
